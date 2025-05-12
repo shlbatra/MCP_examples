@@ -1,0 +1,36 @@
+
+Before -
+LLM <-> API Layer with Apps 
+
+After -
+LLM <-> Unified API <-> MCP <-> Unique API (New way of doing things)
+
+Standard protocol speciffy schema, functions, documentation
+
+- MCP Hosts (Claude desktop, python app)
+- MCP Clients (1:1 connection with server)
+- MCP Servers (expose specific capabilities through standardized MCP)
+- Local Data Sources (connect local database)
+- Remote Services (APIs)
+
+Transport Mechanishm
+1. Standard IO
+2. Server Sent Events (HTTP) - MCP server accessible via API
+
+-> Rest API 
+- Communicate web application (Communication Protocol)
+Front end  (HTTP via Rest api)       URL  Back end (Server)
+Standard - consistent way of doing something.
+
+Model Context Protocol
+Standardized way of AI agents talk with tools ex. database, google drive, iool search features
+Hard to integrate lot of tools with LLM
+
+Standardized Protocol (Tool providers write codes / services)   -> AI Agent
+
+Transport Mechanishm
+- stdio (Running local terminal, input command and output text) 
+- sse (communication over network local or remote) - similar to rest api
+
+
+
